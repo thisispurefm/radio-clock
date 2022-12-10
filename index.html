@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./style.css">
+
+<title>Knock-off clock</title>
+
+<body>
+    <section class="clockContainer">
+        <svg width="100%" height="100%" viewBox="0 0 200 200">
+            <defs>
+                <g id="marking">
+                    <line x1="100" y1="0" x2="100" y2="20" />
+                    <line x1="100" y1="200" x2="100" y2="180" />
+                </g>
+
+                <g id="majorMarkings">
+                    <use href="#marking" transform="rotate(0, 100, 100)" />
+                    <use href="#marking" transform="rotate(90, 100, 100)" />
+                </g>
+
+                <g id="minorMarkings">
+                    <use href="#marking" transform="rotate(30, 100, 100)" />
+                    <use href="#marking" transform="rotate(60, 100, 100)" />
+                    <use href="#marking" transform="rotate(120, 100, 100)" />
+                    <use href="#marking" transform="rotate(150, 100, 100)" />
+                </g>
+            </defs>
+
+            <use href="#majorMarkings" />
+            <use href="#minorMarkings" />
+
+            <line id="hourHand" class="hand" x1="100" y1="50" x2="100" y2="95" />
+            <line id="minuteHand" class="hand" x1="100" y1="40" x2="100" y2="95" />
+            <line id="secondHand" class="hand" x1="100" y1="30" x2="100" y2="95" />
+        </svg>
+    </section>
+
+    <section class="textTimes">
+        <p id="digiClock"></p>
+        <p id="wordTime"></p>
+        <p id="wordDate"></p>
+    </section>
+
+    <script src="clock.js"></script>
+</body>

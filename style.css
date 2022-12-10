@@ -1,0 +1,63 @@
+body {
+    background: #121212;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.clockContainer {
+    width: 100%;
+    height: 20em;
+}
+
+#majorMarkings {
+    stroke: #8635E3;
+    stroke-width: 4;
+}
+
+#minorMarkings {
+    stroke: white;
+    stroke-width: 2;
+}
+
+.hand {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+}
+
+#hourHand {
+    stroke: white;
+    stroke-width: 4;
+}
+
+#minuteHand {
+    stroke: white;
+    stroke-width: 2;
+}
+
+#secondHand {
+    stroke: #8635E3;
+    stroke-width: 2;
+}
+
+.textTimes {
+    text-align: center;
+    margin: 2em;
+}
+
+.textTimes p {
+    margin: 0px;
+}
+
+#digiClock {
+    font-size: 300%;
+    margin-bottom: 0.3em;
+}
+
+#wordTime {
+    font-size: 300%;
+    margin-bottom: 0.3em;
+}
+
+#wordDate {
+    font-size: 200%;
+}
